@@ -36,11 +36,23 @@ namespace gclab3
                     Console.WriteLine("Input is not in range");
                 }
 
-                if (userInt % 2 == 0)
+                if (userInt % 2 == 0 && userInt >=2 && userInt <= 25)
                 {
-                    Console.WriteLine(userNum + " is an even number");
+                    Console.WriteLine("Even and less than 25");
                 }
-                else
+                
+                if (userInt % 2 == 0 && userInt >= 26 && userInt <= 60)
+                {
+                    Console.WriteLine("Even");
+                }
+
+                if (userInt % 2 == 0 && userInt >= 61 && userInt <= 100)
+                {
+                    Console.WriteLine(userNum + " Even");
+                    return;
+                }
+
+                else if (!(userInt % 2 == 0))
                 {
                     Console.WriteLine(userNum + " is an odd number");
                 }
