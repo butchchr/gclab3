@@ -55,7 +55,7 @@ namespace gclab3
                 if (userInt % 2 == 0 && userInt >= 61 && userInt <= 100)
                 {
                     Console.WriteLine(userNum + " Even");
-                    return;
+                    continue;
                 }
 
                 //odd check
